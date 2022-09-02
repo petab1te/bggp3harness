@@ -1,0 +1,2183 @@
+==14288== Memcheck, a memory error detector
+==14288== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==14288== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==14288== Command: ./a.out wtf.jpeg
+==14288== Parent PID: 20307
+==14288== 
+==14288== Invalid read of size 32
+==14288==    at 0x48ABE88: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x4876EC1: pre_process_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870D30: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Address 0x4ba4cf0 is 0 bytes after a block of size 589,824 alloc'd
+==14288==    at 0x4841888: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x1093A9: read_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096A5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Invalid read of size 32
+==14288==    at 0x48ABE8C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x4876EC1: pre_process_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870D30: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Address 0x4ba4d10 is 32 bytes before a block of size 1,152 in arena "client"
+==14288== 
+==14288== Invalid read of size 32
+==14288==    at 0x48ABE91: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x4876EC1: pre_process_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870D30: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Address 0x4ba4d30 is 0 bytes inside a block of size 1,152 free'd
+==14288==    at 0x484426F: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x109492: read_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096A5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Block was alloc'd at
+==14288==    at 0x4841888: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x1093C9: read_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096A5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Invalid read of size 32
+==14288==    at 0x48ABE88: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4BA71DF: ???
+==14288==    by 0x4876EC1: pre_process_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870D30: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Address 0x4ba4f30 is 512 bytes inside a block of size 1,152 free'd
+==14288==    at 0x484426F: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x109492: read_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096A5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Block was alloc'd at
+==14288==    at 0x4841888: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x1093C9: read_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096A5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Invalid read of size 32
+==14288==    at 0x48ABE8C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4BA71DF: ???
+==14288==    by 0x4876EC1: pre_process_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870D30: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Address 0x4ba4f50 is 544 bytes inside a block of size 1,152 free'd
+==14288==    at 0x484426F: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x109492: read_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096A5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Block was alloc'd at
+==14288==    at 0x4841888: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x1093C9: read_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096A5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Invalid read of size 32
+==14288==    at 0x48ABE91: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4BA71DF: ???
+==14288==    by 0x4876EC1: pre_process_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870D30: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Address 0x4ba4f70 is 576 bytes inside a block of size 1,152 free'd
+==14288==    at 0x484426F: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x109492: read_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096A5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Block was alloc'd at
+==14288==    at 0x4841888: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x1093C9: read_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096A5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A49D4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C0E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C23: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C25: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C2C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C33: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C42: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C5E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4B51: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C65: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B62: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B73: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B80: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B91: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B9E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BAE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BBB: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B45: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A49D4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4B51: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C0E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C23: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C25: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C2C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C33: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C42: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C5E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C65: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4CAF: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xEA4: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A49D4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C0E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C23: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C25: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C2C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C33: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C42: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C5E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4B51: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C65: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE84: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A49D4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4B51: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C0E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C23: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C25: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C2C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C33: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C42: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C5E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C65: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE74: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A49D4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C0E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C23: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C25: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C2C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C33: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C42: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C5E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4BF7: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C65: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE6C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A49D4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C0E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C23: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C25: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C2C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C33: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C42: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C5E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4B51: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C65: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xE3C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A49D4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C0E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C23: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C25: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C2C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C33: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C42: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C5E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4B51: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C65: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xE24: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A49D4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C0E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C23: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C25: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C2C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C33: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C42: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4B51: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C5E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4BF7: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C65: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xE0C: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A49D4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE04: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C0E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE04: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4C23: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE04: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4C25: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE04: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== 
+==14288== More than 100 errors detected.  Subsequent errors
+==14288== will still be recorded, but in less detail than before.
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4B51: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xE04: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B62: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xAE3: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B73: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xAE3: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B80: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xAE3: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B91: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xAE3: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B9E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xAE3: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BBB: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xAE3: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x486FB78: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B45: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xAD2: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B62: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xAD2: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B80: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xAD2: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B91: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xAD2: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B9E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xAD2: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BAE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xAD2: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BBB: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xAD2: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4D84: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xA60: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DA6: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xA60: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DB3: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xA60: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DC4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xA60: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DD1: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xA60: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DE1: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xA60: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DEE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xA60: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4CAF: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xA07: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B73: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0x9BF: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4CAF: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BAE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x8ED: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B62: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x75B: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B73: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x75B: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B80: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x75B: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B91: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x75B: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BAE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x75B: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BBB: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x75B: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B45: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x698: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4D84: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x57E: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B73: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0x576: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B80: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0x576: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B91: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0x576: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B9E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0x576: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B62: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0x444: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BAE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0x444: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4BBB: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0x444: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4D95: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x3DA: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DC4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x3DA: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DD1: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x3DA: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DE1: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x3DA: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DEE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x3DA: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484B917: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484BA46: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484BA6F: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484BA82: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x486FBE6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x486FC1A: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484B929: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484B95E: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x484BA63: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x484BA90: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x484BA93: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484BA9D: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484BA40: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x486FB96: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DA6: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x11: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB8F: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Syscall param write(buf) points to uninitialised byte(s)
+==14288==    at 0x4A17E94: write (write.c:26)
+==14288==    by 0x499F2CC: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1180)
+==14288==    by 0x499E66F: new_do_write (fileops.c:448)
+==14288==    by 0x499FA00: _IO_new_file_xsputn (fileops.c:1254)
+==14288==    by 0x499FA00: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==14288==    by 0x4994AC6: fwrite (iofwrite.c:39)
+==14288==    by 0x487ABC3: empty_output_buffer (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x486FBF8: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  Address 0x4ba6236 is 342 bytes inside a block of size 20,151 alloc'd
+==14288==    at 0x4841888: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x489C9B9: alloc_small (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x487AB54: init_destination (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858A98: jpeg_start_compress (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1095CA: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B9E: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xCD8: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CC0: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x995: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CD1: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x995: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CDE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x995: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CEF: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x995: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CFC: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x995: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4D0C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x995: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4D19: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x995: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4CAF: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0x710: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4BF7: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484B993: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x484B9BB: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484B9DD: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484B9F4: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484BA35: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x484BA11: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484BA1C: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4CAF: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x57: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB8F: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B45: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0xCA6: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4D95: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DA6: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DB3: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DC4: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DE1: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DEE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4DB3: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x3: ???
+==14288==    by 0x139: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB8F: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4BF7: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xDF: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB8F: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x484B967: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x484BA0E: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==14288==    by 0x486FBC6: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CC0: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xF06: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CD1: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xF06: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CDE: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xF06: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CEF: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xF06: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4D0C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xF06: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4D19: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0xF06: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4B45: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xEED: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4D95: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4: ???
+==14288==    by 0xB46: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Conditional jump or move depends on uninitialised value(s)
+==14288==    at 0x48A4BF7: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0x3F5: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CFC: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x2: ???
+==14288==    by 0x73F: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== Use of uninitialised value of size 8
+==14288==    at 0x48A4CA3: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1: ???
+==14288==    by 0xFFC: ???
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x486FB06: encode_mcu_huff (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4859674: compress_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870CE4: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288== 
+==14288== 
+==14288== Process terminating with default action of signal 11 (SIGSEGV)
+==14288==  Access not within mapped region at address 0x4F0A000
+==14288==    at 0x48ABE8C: ??? (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x1FFEFFF5CF: ???
+==14288==    by 0x4876EC1: pre_process_data (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4870D30: process_data_simple_main (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x4858B92: jpeg_write_scanlines (in /home/bread/hacking/fuzzjpeg/libjpeg-turbo-2.1.4/build/libjpeg.so.62.3.0)
+==14288==    by 0x109615: write_jpeg_file (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==    by 0x1096B5: main (in /home/bread/hacking/fuzzjpeg/libjpeg-sample/libjpeg-sample/a.out)
+==14288==  If you believe this happened as a result of a stack
+==14288==  overflow in your program's main thread (unlikely but
+==14288==  possible), you can try to increase the size of the
+==14288==  main thread stack using the --main-stacksize= flag.
+==14288==  The main thread stack size used in this run was 8388608.
+==14288== 
+==14288== HEAP SUMMARY:
+==14288==     in use at exit: 693,108 bytes in 17 blocks
+==14288==   total heap usage: 31 allocs, 14 frees, 736,442 bytes allocated
+==14288== 
+==14288== LEAK SUMMARY:
+==14288==    definitely lost: 0 bytes in 0 blocks
+==14288==    indirectly lost: 0 bytes in 0 blocks
+==14288==      possibly lost: 0 bytes in 0 blocks
+==14288==    still reachable: 693,108 bytes in 17 blocks
+==14288==         suppressed: 0 bytes in 0 blocks
+==14288== Rerun with --leak-check=full to see details of leaked memory
+==14288== 
+==14288== Use --track-origins=yes to see where uninitialised values come from
+==14288== For lists of detected and suppressed errors, rerun with: -s
+==14288== ERROR SUMMARY: 294054 errors from 202 contexts (suppressed: 0 from 0)
