@@ -1,0 +1,33 @@
+Pour one out for this other crash I found that got patched before I could blink (and I could no longer reproduce)
+
+=====================================================================
+TIME: 2022-07-30.12:24:25
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : NONE
+ fuzzTarget      : ./a.out ___FILE___ 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 21077.jpg
+FUZZ_FNAME: /home/bread/hacking/fuzzjpeg/libjpeg-sample/SIGSEGV.PC.7ffff7f4f4a8.STACK.18af03f2c0.CODE.1.ADDR.7ffff7f8c000.INSTR.vmovdqu_(%rsi),%ymm0.fuzz
+PID: 4424
+SIGNAL: SIGSEGV (11)
+PC: 0x7ffff7f4f4a8
+FAULT ADDRESS: 0x7ffff7f8c000
+INSTRUCTION: vmovdqu_(%rsi),%ymm0
+STACK HASH: 00000018af03f2c0
+STACK:
+ <0x000055555555a640> [func:UNKNOWN file: line:0 module:[heap]]
+ <0x00007ffff7f28e5a> [func:UNKNOWN file: line:0 module:/usr/lib/libjpeg.so.8.2.2]
+ <0x0000000000000000> [func:UNKNOWN file: line:0 module:UNKNOWN]
+=====================================================================
+=====================================================================
