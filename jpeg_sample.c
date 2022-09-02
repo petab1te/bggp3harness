@@ -105,9 +105,10 @@ int write_jpeg_file( char *filename )
 	return 1;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-  char *infilename = "test.jpg", *outfilename = "out.jpg";
+  if (argc == 2){	  
+  char *infilename = argv[1], *outfilename = "out.jpg";
   
   if( read_jpeg_file( infilename ) > 0 ) 
     {
@@ -115,8 +116,7 @@ int main()
     } else {
     return -1;
   }
-  
+  }
   return 0;
 }
-
 
